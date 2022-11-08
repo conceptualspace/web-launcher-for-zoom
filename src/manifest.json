@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Web Launcher for Zoom",
   "description": "Automatically opens zoom in your browser without waiting for the link",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "author": "dev@conceptualspace.net",
   "host_permissions": [
     "*://*.zoom.us/*"
