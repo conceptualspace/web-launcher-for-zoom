@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Web Launcher for Zoom",
+  "description": "Automatically opens zoom in your browser without waiting for the link",
+  "version": "2.0.0",
+  "author": "dev@conceptualspace.net",
+  "host_permissions": [
+    "*://*.zoom.us/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.zoom.us/*"],
+      "js": ["arrive.min.js", "content_script.js"],
+      "all_frames": true,
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "128": "img/icon.png"
+  }
+}
